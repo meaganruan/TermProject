@@ -1,0 +1,82 @@
+/* fix body */
+body{
+	margin: 3em 10em 7em 10em;
+	font-family: Courier New, Courier, Monospace;
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
+	border: 5px outset plum;
+}
+
+
+/* navigation menu */
+body > header > nav.menu{
+	float: left;
+	width: 100%;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border: 5px outset plum;
+	padding: 0.5em;
+	background-color: purple;
+}
+
+nav > ul{
+	list-style: none;
+}
+
+nav> ul > li{
+	font-size: 1.25em;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 20%;
+}
+
+nav > ul > li > a{
+	color: purple;
+	text-decoration: none;
+	display: block;
+}
+
+a:visited {
+	color: darkOrange;
+}
+a:hover {
+	color: plum;
+}
+
+
+/* words */
+ p{
+	line-height: 25px;
+}
+
+em{
+	color: plum;
+}
+
+/* footer */
+footer{
+	margin: 5em;
+	text-align: center;
+	border: 5px outset plum;
+}
+
+
+footer > ul > li{
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 1em;
+	width: 21%;
+}
+
+footer > ul > li > a{
+	color: purple;
+	text-decoration: none;
+}
+
+body > footer > ul > li:nth-of-type(2){
+ 	color: purple;
+	list-style-image: url("iglogo.png");
+}

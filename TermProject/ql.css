@@ -1,0 +1,18 @@
+body{
+	color: purple;
+}
+
+body > article > ol > li{
+	color: darkOrange;
+}
+
+img{
+	float: right;
+	display: block;
+	margin-left: 2em;
+	border: 1px solid purple;
+	max-width: 75%;
+    max-height: 75%;
+    padding: 0.5em;
+    box-shadow: -10px 5px 5px plum;
+}
