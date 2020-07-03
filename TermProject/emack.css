@@ -2,7 +2,12 @@
 
 
 /* fix image size */
-img{
+div.pics{
+	margin-left: 50em;
+}
+
+
+img.atwork{
 	margin: 2em;
 	border: 1px solid purple;
 	max-width: 25%;
@@ -22,13 +27,9 @@ article > p{
 }
 
 p:first-of-type{
-	padding-top: 13em;
+	padding-top: 15em;
 }
 
 b > em{
 	color: purple;
-}
-
-em{
-	color: plum;
 }
