@@ -2,13 +2,13 @@ html{
 
 	background-image: url("background.png");
 	background-repeat: no-repeat;
-  	background-size: cover;
+  	background-size: 100%;
 }
 
 /* fix body */
 
 body{
-	margin: 3em 8em 3em 8em;
+	margin: 0.5em 8em 3em 8em;
 	font-family: Courier New, Courier, Monospace;
 	border: 5px outset plum;
 	background-color: rgb(251, 251, 255);
@@ -38,11 +38,12 @@ nav> ul > li{
 	display: block;
 	float: left;
 	text-align: center;
-	width: 19%;
+	width: 19.20%;
 	background-color: rgb(192, 99, 192);
     line-height: 3em;
 	border: 1px solid rgb(192, 99, 192);
 	list-style: none;
+	margin: auto;
 	margin-bottom: 3em;
 }
 
