@@ -30,10 +30,27 @@
 
 window.addEventListener("load", function(){
    calcCart();
+   document.forms.cart.elements.modelQty.addEventListener("change", calcCart);
+
+   var shippingoption = document.querySelector('input[name="shippingType"]');
+   for(var i =0; i < shippingoption.length; i++){
+      shippingoption[i].onclick = calcCart;
+   }
 });
 
 
+function calcCart(){
+   //total order cost of item
+   var modelCostIndex = document.forms.cart.elements.modelQty.selectedIndex;
+   var orderCost = (document.forms.cart.elements.modelCost.value) * (document.forms.cart.elements.modelQty.options[modelCostIndex].value);
+   formatUSCurrency(orderCost);
 
+   //total order cost with shipping
+   var shippingIndex = document.forms.cart.elements.shippingType.selectedIndex;
+   var shipCost = (document.forms.cart.elements.shippingType.options[shippingIndex].value) * (document.forms.cart.elements.modelQty.options[modelCostIndex].value);
+   formatNumber(shipCost, 2);
+   console.log(shipCost);
+}
 
 
 
