@@ -43,13 +43,24 @@ function calcCart(){
    //total order cost of item
    var modelCostIndex = document.forms.cart.elements.modelQty.selectedIndex;
    var orderCost = (document.forms.cart.elements.modelCost.value) * (document.forms.cart.elements.modelQty.options[modelCostIndex].value);
-   formatUSCurrency(orderCost);
+   document.forms.cart.elements.orderCost.value = formatUSCurrency(orderCost);
+
 
    //total order cost with shipping
-   var shippingIndex = document.forms.cart.elements.shippingType.selectedIndex;
-   var shipCost = (document.forms.cart.elements.shippingType.options[shippingIndex].value) * (document.forms.cart.elements.modelQty.options[modelCostIndex].value);
-   formatNumber(shipCost, 2);
-   console.log(shipCost);
+   //store index 
+   var shipCost = (document.querySelector('input[name="shipping"]:checked').value) * (document.forms.cart.elements.modelQty.options[modelCostIndex].value);
+   document.forms.cart.elements.shippingCost.value = formatNumber(shipCost, 2);
+
+   //subtotal field
+   document.forms.cart.elements.subTotal.value = formatNumber(orderCost + shipCost, 2);
+
+   //salesTax
+   var salesTax = 0.05 *(orderCost + shipCost);
+   document.forms.cart.elements.salesTax.value = salesTax;
+
+   //cartTotal display
+
+   document.forms.cart.elements.cartTotal.value = formatUSCurrency(orderCost + shipCost + salesTax);
 }
 
 

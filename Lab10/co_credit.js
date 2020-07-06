@@ -45,7 +45,11 @@
 */
 
 
+window.addEventListener("load", function(){
+   var orderData = location.search.slice;
 
+
+});
 
 
 
