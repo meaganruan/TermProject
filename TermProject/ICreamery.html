@@ -68,7 +68,7 @@
 		<legend>Step 1: Flavor</legend>
 		<label for="flavor">Which icecream flavor(s) do you want and what size?</label>
 		</br> 
-			<label><input type="checkbox" id="sd-p" name="flavor" value="Stoney's Dream"/> Stoney's Dream in a Pint (14 oz)</label>
+			<label><input type="checkbox" id="sd-p" name="flavor" value="Stoney's Dream"/> Stoney's Dream in a <em>Pint</em> (14 oz)</label>
 
 		<label for="SDQpuantity">Qty</label>
          <select name="quantity" id="SDpQuantity">	
@@ -85,7 +85,7 @@
             <option value="10">10</option>
          </select>  
          </br>
-			<label><input type="checkbox" id="sd-q" name="flavor" value="Stoney's Dream"/> Stoney's Dream in a Quart (24 oz)</label>
+			<label><input type="checkbox" id="sd-q" name="flavor" value="Stoney's Dream"/> Stoney's Dream in a <em>Quart</em> (24 oz)</label>
 
 
 		<label for="SDQquantity">Qty</label>
@@ -105,7 +105,7 @@
 
          </br>
 
-	        <label><input type="checkbox" id="trt-p" name="flavor" value="Triple Raspberry Truffle" /> Triple Raspberry Truffle in a Pint (14 oz)</label>
+	        <label><input type="checkbox" id="trt-p" name="flavor" value="Triple Raspberry Truffle" /> Triple Raspberry Truffle in a <em>Pint</em> (14 oz)</label>
 	        <label for="TRTpQuantity">Qty</label>
          <select name="quantity" id="TRTpQuantity">	
          	<option value="0" selected>0</option>
@@ -122,7 +122,7 @@
          </select>  
 
          </br>
-	        <label><input type="checkbox" id="trt-q" name="flavor" value="Triple Raspberry Truffle" /> Triple Raspberry Truffle in a Quart (24 oz)</label>
+	        <label><input type="checkbox" id="trt-q" name="flavor" value="Triple Raspberry Truffle" /> Triple Raspberry Truffle in a <em>Quart</em> (24 oz)</label>
 
 	        <label for="TRTqQuantity">Qty</label>
          <select name="quantity" id="TRTqQuantity">	
@@ -147,11 +147,11 @@
 
 		</br> 
 		<label for="name">Enter Name: </label>
-		<input type="text" id="name"/>
+		<input type="text" id="name" required/>
 
 		</br>
 		<label for="time">Enter Date and Time: </label>
-		<input type="datetime-local" id="time"/>
+		<input type="datetime-local" id="time" required/>
 		(Note: Store Hours are from 12 PM - 10 PM)
 	</fieldset>
 
@@ -159,7 +159,7 @@
 		<legend>Step 3: Payment</legend>
 	<label for="cart">Please review your order then add to cart!</label>
 	</br>
-	<input type="submit" id="cart" value="Add to Cart">
+	<input class="submit" type="submit" id="cart" value="Add to Cart">
 
 	</fieldset>
 

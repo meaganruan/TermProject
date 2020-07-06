@@ -8,6 +8,7 @@
 <title>Checkout</title>
 <link href="styles.css" rel="stylesheet"/>
 <link href="ic.css" rel="stylesheet"/>
+<script src="cartpayment.js"></script>
 
 </head>
 
@@ -37,6 +38,74 @@
 <div class="content">
 
 
+<section id="cart">
+   <fieldset>
+      <legend>Your Cart</legend>
+   </fieldset>
+
+
+
+
+</section>
+
+<br>
+
+
+<section id="payment">
+<form id="credit" name="credit" method="post" action="verification.html">         
+         <fieldset id="creditcard">
+            <legend>Credit Information</legend>
+
+            <label for="cardHolder">Card Holder*</label>
+            <input name="cardHolder" id="cardHolder" required type="text" />              
+
+            	<br>
+               <label class="cardLabel">Credit Company*</label>
+               <label class="cardLabel">
+                  <input name="company" value="amex" type="radio" required />
+                  <img src="co_amex.png" alt="American Express" />
+               </label>
+               <label class="cardLabel">               
+                  <input name="company" value="discover" type="radio" />
+                  <img src="co_discover.png" alt="Discover" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="company" value="master" type="radio"  />
+                  <img src="co_master.png" alt="MasterCard" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="company" value="visa" type="radio"  />
+                  <img src="co_visa.png" alt="Visa" />
+               </label>       
+
+               <br>
+
+            <label for="cardNumber">Credit Card Number*</label>
+            <input name="cardNumber" id="cardNumber" required type="text"
+                   pattern="[0-9]{13,16}"/>
+
+            <label for="expDate">Expiration Date*</label>
+            <input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
+
+            <label for="cvc">CVC*</label>
+            <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+         </fieldset>
+
+         <p id="footnote">* - Required Item</p>        
+         <input class="submit" type="submit" id="subButton" value="Submit Payment" />  
+
+
+         <br> 
+         <br>
+         <fieldset class="paypal">
+            <legend>PayPal Here!</legend>
+            <p>
+               Clicking will redirect you to PayPal.
+            </p>
+            <a href="https://www.paypal.com/us/home"><img src="paypal.jpg"></a>
+         </fieldset>       
+      </form>
+</section>
 
 </div>
 

@@ -8,17 +8,15 @@ h2{
 }
 
 figure.icecream{
-	width: 50%;
-	border-bottom: 5px double purple;
-	border-right: 5px double purple;
+	width: 37%;
 	border-radius: 2em;
 	padding: 1.5em;
 	float: left;
 }
 
 figure > img{
-	margin: auto;
-	padding: auto;
+	padding-left: 6.5em;
+	padding-bottom: 2em;
 }
 
 figcaption{
@@ -33,4 +31,46 @@ footer{
 
 legend{
 	color: purple;
+}
+
+fieldset{
+	line-height: 3em;
+}
+
+fieldset#cards > label{
+	padding: auto;
+}
+
+fieldset.paypal{
+	width: 40%;
+}
+
+input.submit{
+	color: purple;
+	background-color: plum;
+	font-size: 20px;
+	line-height: 2em;
+	border-radius: 1.5em;
+	margin: 2em;
+}
+
+input.submit:hover{
+	background-color: darkOrange;
+}
+
+h2#verification{
+	text-align: center;
+	padding-bottom: 3em;
+	border-bottom: 3px double purple;
+}
+
+div#verifpage > img {
+	width: 50%;
+	padding-left: 17em;
+	margin-bottom: 10em;
+}
+
+
+input:invalid {
+  background-color: salmon;
 }
